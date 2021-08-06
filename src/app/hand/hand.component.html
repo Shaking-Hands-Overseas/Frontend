@@ -1,0 +1,138 @@
+<body style="background: #C0C0C0">
+	<div class="container">
+	<div class="row">	
+		<div class="col-md-3 offset-1" style="padding-top: 100px; font-family: 'Raleway', sans-serif">
+			Glove Fingers:
+		
+		</div>
+		<div class="col-md-3" style="padding-top: 100px; font-family: 'Raleway', sans-serif">
+			Hand Fingers:
+		</div>
+		<div class="col-md-3" style="padding-top: 100px; font-family: 'Raleway', sans-serif">
+			Angles:
+		</div>
+		
+	</div>
+	<hr style="color: transparent;">
+	<form (ngSubmit) = "onSubmit()" #HandsForm="ngForm">
+	<div class="row">
+		<div class="col-md-3 offset-1"style="padding-top: 20px; font-family: 'Raleway', sans-serif">
+			Finger 1
+		</div>
+		<div class="col-md-3" style="padding-top: 20px">
+			<div class="form-group">
+        <select class="form-control" style="width: 100px;" id="F1" required [(ngModel)]="model.F1" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+        </select>
+      		</div>
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<div class="user-box">
+	      <input type="number" class = "form-control" min="0" max="180" id = "s1" required [(ngModel)] = "custom.s1" name="s1" #s1 ="ngModel">
+	    	</div>
+		</div>
+	</div>
+	<hr style="color: transparent;">
+	<div class="row">
+		<div class="col-md-3 offset-1"style="padding-top: 20px; font-family: 'Raleway', sans-serif">
+			Finger 2
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<span></span>
+        <select class="form-control" style="width: 100px;" id="F1" required [(ngModel)]="model.F2" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+			</select>
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<div class="user-box">
+	      <input type="number" class = "form-control" min="0" max="180" id = "s2" required [(ngModel)] = "custom.s2" name="s2" #s2 ="ngModel">
+	    	</div>
+		</div>
+	</div>
+	<hr style="color: transparent;">
+	<div class="row">
+		<div class="col-md-3 offset-1"style="padding-top: 20px; font-family: 'Raleway', sans-serif">
+			Finger 3
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<span></span>
+        <select class="form-control" style="width: 100px;" id="F1" required [(ngModel)]="model.F3" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+			</select>
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<div class="user-box">
+	      <input type="number" class = "form-control" min="0" max="180" id = "s3" required [(ngModel)] = "custom.s3" name="s3" #s3 ="ngModel">
+	    	</div>
+		</div>
+	</div>
+	<hr style="color: transparent;">
+	<div class="row">
+		<div class="col-md-3 offset-1"style="padding-top: 20px; font-family: 'Raleway', sans-serif">
+			Finger 4
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<span></span>
+        <select class="form-control" style="width: 100px;" id="F1" required [(ngModel)]="model.F4" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+			</select>
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<div class="user-box">
+	      <input type="number" class = "form-control" min="0" max="180" id = "s4" required [(ngModel)] = "custom.s4" name="s4" #s4 ="ngModel">
+	    	</div>
+		</div>
+	</div>
+	<hr style="color: transparent;">
+	<div class="row">
+		<div class="col-md-3 offset-1"style="padding-top: 20px; font-family: 'Raleway', sans-serif">
+			Finger 5
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<span></span>
+        <select class="form-control" style="width: 100px;" id="F1" required [(ngModel)]="model.F5" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+			</select>
+		</div>
+		<div class="col-md-3"style="padding-top: 20px">
+			<div class="user-box">
+	      <input type="number" class = "form-control" min="0" max="180" id = "s5" required [(ngModel)] = "custom.s5" name="s5" #s5 ="ngModel">
+	    	</div>
+		</div>
+	</div>
+	<hr style="color: transparent;">
+	<div class="row">
+		<div class="col-md-12" style=" padding-top: 40px; text-align:center;">
+		<a class="body2"role="button" (click)="OnClick();">
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      <span></span>
+		      Submit
+		</a>
+		</div>
+	</div>
+	</form>
+</div>
+        <hr style="color: transparent;padding-top: 304px;">
+</body>
