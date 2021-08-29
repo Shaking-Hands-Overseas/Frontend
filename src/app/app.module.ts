@@ -13,7 +13,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LogoutComponent } from './logout/logout.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { TestingComponent } from './testing/testing.component';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { MessageService } from './message.service';
 import { HandComponent } from './hand/hand.component';
@@ -27,7 +26,6 @@ import { HandComponent } from './hand/hand.component';
     AboutComponent,
     LogoutComponent,
     SignUpComponent,
-    TestingComponent,
     HandComponent,
   ],
   imports: [
