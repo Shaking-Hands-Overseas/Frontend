@@ -7,15 +7,6 @@
 input {
     background-color: #f0f0f0;
 }
-body2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #050801;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
 .row {
     margin-left: -15px;
     margin-right: -15px;

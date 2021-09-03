@@ -34,7 +34,5 @@ export class HandComponent implements OnInit {
     
   this.handservice.Custom(this.custom)
     .subscribe(info => this.customstatus.push(info));
-
-
  }
 }

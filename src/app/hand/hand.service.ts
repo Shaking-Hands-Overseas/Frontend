@@ -18,7 +18,7 @@ const httpOptions = {
 
 @Injectable()
 export class HandService {
-  Url = 'http://127.0.0.1:8000/custom';  // URL to web api
+  Url = 'http://localhost:8080/1/custom';  // URL to web api
   private handleError: HandleError;
 
   constructor(
@@ -29,11 +29,10 @@ export class HandService {
 
   //////// Save methods //////////
 
-  /** POST: add a new hero to the database */
   SendInfo(info: Fingers): Observable<Fingers> {
     return this.http.post<Fingers>(this.Url, info)
   }  
   Custom(info: Custom): Observable<Custom> {
-    return this.http.post<Custom>('http://127.0.0.1:8000/servo', info)
+    return this.http.post<Custom>('http://localhost:8080/1/servo', info)
   }
 }
