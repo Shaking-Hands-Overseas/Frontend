@@ -1,0 +1,29 @@
+<nav style="background-color: #C0C0C0;">
+    <div class="row" style="margin-right: 0px;">
+    <div class="col-md-5" style="background-color: #C0C0C0;">
+    <button onclick="window.location.href='/'" class="custom-btn btn-6"><span>Home</span></button>
+    <button onclick="window.location.href='/About'" class="custom-btn btn-6"><span>About</span></button>
+    <button onclick="window.location.href='/hand'" class="custom-btn btn-6"><span>Hand</span></button>
+    </div>
+    <div class="col-md-5 offset-2" style="background-color: #C0C0C0; padding-left: 320px;">
+    <div [hidden]="true">
+    <button onclick="window.location.href='/login'" class="custom-btn btn-6" ><span>Login</span></button>
+    </div>
+    <div [hidden]="true">
+    <button onclick="window.location.href='/sign-up'" class="custom-btn btn-6" ><span>Sign Up</span></button>
+    </div>
+    <div [hidden]="true">
+    <button onclick="window.location.href='/logout'" class="custom-btn btn-6" ><span>Log out</span></button>
+    </div>
+    </div>
+    </div>
+
+</nav>
+<router-outlet></router-outlet>
+<div id="footer">
+    <div class="subtitle"> 2021-2022</div>
+    <div class="subtitle"> CIC & MIT Project</div>
+    <div class="col-md-12" style="text-align: center">
+        <app-social-media></app-social-media>
+    </div>
+</div>
