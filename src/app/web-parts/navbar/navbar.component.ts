@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-    login = true;
-    signup = true;
-    logout = true;
+    login = false;
+    signup = false;
+    logout = false;
   constructor() { }
 
   ngOnInit(): void {

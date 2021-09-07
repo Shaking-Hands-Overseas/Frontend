@@ -21,7 +21,7 @@ export class HandComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  model = new Fingers("", "", "", "", "")
+  model = new Fingers("s1", "s2", "s3", "s4", "s5")
   nonemodel = new Fingers("", "", "", "", "")
 
   custom = new Custom(0, 0, 0, 0, 0)
