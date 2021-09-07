@@ -1,0 +1,100 @@
+<title>Hand Control Zone</title>
+<form (ngSubmit) = "onSubmit()" #HandsForm="ngForm">
+	<div class="container" style="margin: auto; padding-top: 100px;">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="suptext col-md-3">
+			Glove Fingers:
+			<div class="form1">
+				Finger 1
+			</div>
+			<div class="form1">
+				Finger 2
+			</div>
+			<div class="form1">
+				Finger 3
+			</div>
+			<div class="form1">
+				Finger 4
+			</div>
+			<div class="form1">
+				Finger 5
+			</div>
+		</div>
+		<div class="suptext col-md-3">
+			Hand Fingers:
+		<div class="form-group">
+        <select class="fingeroption form-control" id="F1" required [(ngModel)]="model.F1" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+        </select>
+		<select class="fingeroption form-control" id="F1" required [(ngModel)]="model.F2" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+		</select>
+		<select class="fingeroption form-control" id="F1" required [(ngModel)]="model.F3" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+		</select>
+		<select class="fingeroption form-control" id="F1" required [(ngModel)]="model.F4" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+		</select>
+		<select class="fingeroption form-control" id="F1" required [(ngModel)]="model.F5" name="F1" #power="ngModel">
+			<option value="s1">Finger 1</option>
+			<option value="s2">Finger 2</option>
+			<option value="s3">Finger 3</option>
+			<option value="s4">Finger 4</option>
+			<option value="s5">Finger 5</option>
+		</select>
+		</div>
+	</div>
+
+		<div class="form-group suptext col-md-2">
+			Angles:
+		
+			<div class="col-md-3">
+				<div class="user-box">
+			  <input type="number" class = "numbox form-control" min="0" max="180" id = "s1" required [(ngModel)] = "custom.s1" name="s1" #s1 ="ngModel">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="user-box">
+			  <input type="number" class = "numbox form-control" min="0" max="180" id = "s2" required [(ngModel)] = "custom.s2" name="s2" #s2 ="ngModel">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="user-box">
+			  <input type="number" class = "numbox form-control" min="0" max="180" id = "s3" required [(ngModel)] = "custom.s3" name="s3" #s3 ="ngModel">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="user-box">
+			  <input type="number" class = "numbox form-control" min="0" max="180" id = "s4" required [(ngModel)] = "custom.s4" name="s4" #s4 ="ngModel">
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="user-box">
+			  <input type="number" class = "numbox form-control" min="0" max="180" id = "s5" required [(ngModel)] = "custom.s5" name="s5" #s5 ="ngModel">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5"></div>
+		<div class="frame col-md-7" style="margin: auto; padding-top: 30px;">
+		<button class="custom-btn btn-9" (click)="OnClick();">Submit</button>
+		</div>
+	</div>
+	</div>
+</form>

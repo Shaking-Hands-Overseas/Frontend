@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component'
-import { HomeComponent } from './home/home.component'
-import { AboutComponent } from './about/about.component'
-import { LogoutComponent } from './logout/logout.component'
-import { SignUpComponent } from './sign-up/sign-up.component'
-import { HandComponent } from './hand/hand.component'
+import { LoginComponent } from './auth/login/login.component'
+import { HomeComponent } from './webpages/home/home.component'
+import { AboutComponent } from './webpages/about/about.component'
+import { LogoutComponent } from './auth/logout/logout.component'
+import { SignUpComponent } from './auth/sign-up/sign-up.component'
+import { HandComponent } from './webpages/hand/hand.component'
 import { NotFoundComponent } from './not-found/not-found.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './webpages/contact/contact.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },

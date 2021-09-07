@@ -6,9 +6,9 @@ import { HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { Fingers } from '../_models/fingers'
-import { Custom } from '../_models/custom'
-import { HttpErrorHandler, HandleError } from '../http-error-handler.service';
+import { Fingers } from '../../_models/fingers'
+import { Custom } from '../../_models/custom'
+import { HttpErrorHandler, HandleError } from '../../_services/http-error-handler.service';
 
 const httpOptions = {
   headers: new HttpHeaders({

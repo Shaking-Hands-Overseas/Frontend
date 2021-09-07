@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { FormsModule, FormControl }   from '@angular/forms';
 
-import { Fingers } from '../_models/fingers'
+import { Fingers } from '../../_models/fingers'
 import { HandService } from './hand.service'
-import { Custom } from '../_models/custom'
+import { Custom } from '../../_models/custom'
 
 @Component({
   selector: 'app-hand',

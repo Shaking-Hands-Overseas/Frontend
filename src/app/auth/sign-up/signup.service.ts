@@ -6,8 +6,8 @@ import { HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { LoginUser } from '../_models/Loginuser'
-import { HttpErrorHandler, HandleError } from '../http-error-handler.service';
+import { SignUpUser } from '../../_models/Signupuser';
+import { HttpErrorHandler, HandleError } from '../../_services/http-error-handler.service';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -16,8 +16,8 @@ const httpOptions = {
 };
 
 @Injectable()
-export class LoginService {
-  Url = 'http://127.0.0.1:8000/login';  // URL to web api
+export class SignUpService {
+  Url = '';  // URL to web api
   private handleError: HandleError;
 
   constructor(
@@ -26,7 +26,10 @@ export class LoginService {
     this.handleError = httpErrorHandler.createHandleError('LoginService');
   }
 
-  addUser(user: LoginUser): Observable<LoginUser> {
-    return this.http.post<LoginUser>(this.Url, user)
+  //////// Save methods //////////
+
+  /** POST: add a new hero to the database */
+  addUser(user: SignUpUser): Observable<SignUpUser> {
+    return this.http.post<SignUpUser>(this.Url, user)
   }
 }

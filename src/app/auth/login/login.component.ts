@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NgForm} from '@angular/forms';
 import { FormsModule, FormControl }   from '@angular/forms';
 
-import { LoginUser } from '../_models/Loginuser';
+import { LoginUser } from '../../_models/Loginuser';
 import { LoginService } from './login.service';
 
 @Component({
