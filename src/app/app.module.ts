@@ -16,6 +16,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { MessageService } from './message.service';
 import { HandComponent } from './hand/hand.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { HandComponent } from './hand/hand.component';
     LogoutComponent,
     SignUpComponent,
     HandComponent,
+    NotFoundComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Shaking Hands Overseas';
+  login = true;
+  signup = true;
+  logout = true;
 }

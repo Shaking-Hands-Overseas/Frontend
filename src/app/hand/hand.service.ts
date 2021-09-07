@@ -27,8 +27,6 @@ export class HandService {
     this.handleError = httpErrorHandler.createHandleError('HandService');
   }
 
-  //////// Save methods //////////
-
   SendInfo(info: Fingers): Observable<Fingers> {
     return this.http.post<Fingers>(this.Url, info)
   }  
