@@ -104,7 +104,13 @@
         },
         "deploy": {
           "builder": "@angular/fire:deploy",
-          "options": {}
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "ShakingHandsOverseas:build:production",
+            "firebaseProject": "shaking-hands-overseas-3f807",
+            "firebaseHostingSite": "shaking-hands-overseas-3f807"
+          }
         }
       }
     }
