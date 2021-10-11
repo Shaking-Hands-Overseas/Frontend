@@ -2,7 +2,7 @@
   "targets": {
     "shaking-hands-overseas-3f807": {
       "hosting": {
-        "ShakingHandsOverseas": [
+        "app": [
           "shaking-hands-overseas-3f807"
         ]
       }
