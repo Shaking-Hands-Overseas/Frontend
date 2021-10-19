@@ -28,11 +28,11 @@ export class HandComponent implements OnInit {
   nonecustom = new Custom(0, 0, 0, 0, 0) // The Empty dictionary where the actual choice of the user will be stored
   onSubmit() {}
 
- OnClick() {
-  this.handservice.SendInfo(this.model)
-    .subscribe(info => this.status.push(info));
+ OnClick() { // When clicked the submit button the code written for the API communication in the Hands Service is exectued
+  this.handservice.SendInfo(this.model) // With the body message containing the Configuration of fingers
+    .subscribe(info => this.status.push(info)); 
     
-  this.handservice.Custom(this.custom)
+  this.handservice.Custom(this.custom) // With the body message containing the Configuration of angles
     .subscribe(info => this.customstatus.push(info));
  }
 }
