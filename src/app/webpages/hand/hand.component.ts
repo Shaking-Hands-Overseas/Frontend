@@ -21,11 +21,11 @@ export class HandComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  model = new Fingers("s1", "s2", "s3", "s4", "s5")
-  nonemodel = new Fingers("", "", "", "", "")
+  model = new Fingers("s1", "s2", "s3", "s4", "s5") //The Default Configuration of fingers
+  nonemodel = new Fingers("", "", "", "", "") // The Empty dictionary where the actual choice of the user will be stored
 
-  custom = new Custom(0, 0, 0, 0, 0)
-  nonecustom = new Custom(0, 0, 0, 0, 0)
+  custom = new Custom(0, 0, 0, 0, 0) // The Default Configuration of the angles
+  nonecustom = new Custom(0, 0, 0, 0, 0) // The Empty dictionary where the actual choice of the user will be stored
   onSubmit() {}
 
  OnClick() {
