@@ -16,7 +16,7 @@ export class HandComponent implements OnInit {
   status: Fingers[] = [] // Empty list which will serve as the body when sending the Configuration of the fingers to the API
   customstatus: Custom[] = [] // Empty list which will serve as the body when sending the configuration of the angles to the API
 
-  constructor(private handservice: HandService) { }
+  constructor(private handservice: HandService) { } // Importing Hand Service into the constructor
 
   ngOnInit(): void {
   }
