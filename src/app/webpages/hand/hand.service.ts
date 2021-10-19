@@ -16,21 +16,22 @@ const httpOptions = {
   })
 };
 
-@Injectable()
+@Injectable() // Decorator that marks this class as a dependency
 export class HandService {
-  Url = 'https://xlbi6e.deta.dev/custom';  // URL to web api
+  Url = 'https://xlbi6e.deta.dev/custom';  // URL to web API
   private handleError: HandleError;
 
   constructor(
-    private http: HttpClient,
-    httpErrorHandler: HttpErrorHandler) {
-    this.handleError = httpErrorHandler.createHandleError('HandService');
+    private http: HttpClient, // Importing the HttpClient needed for an HTTP connection
+    httpErrorHandler: HttpErrorHandler) { // Importing the Http Error Handler
+    this.handleError = httpErrorHandler.createHandleError('HandService'); //Creates an Object of the class Handle Error
   }
 
-  SendInfo(info: Fingers): Observable<Fingers> {
-    return this.http.post<Fingers>(this.Url, info)
+  SendInfo(info: Fingers): Observable<Fingers> { //Creates a blank Post request with the body as an input to the function to the URL specified
+    return this.http.post<Fingers>(this.Url, info) 
   }  
-  Custom(info: Custom): Observable<Custom> {
+  Custom(info: Custom): Observable<Custom> { //Creates a blank Post request with the body as an input to the function to the URL specified
     return this.http.post<Custom>('https://xlbi6e.deta.dev/servo', info)
   }
 }
+
